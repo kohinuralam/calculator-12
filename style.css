@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+/*==font-area-end==*/
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    background: #ffffff;
+}
+
+a {
+    display: inline-block;
+}
+
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* this is start */
+
+.header-area {
+   background: #FFFFFF;
+   padding: 43px 0 38px 0;
+}
+
+.navbar li {
+    padding: 0 46px 0 0;
+}
+
+.navbar li:last-child {
+    padding-right: 0;
+}
+
+.navbar-toggler {
+    border: 0;
+    color: #000000 !important;
+    font-size: 40px;
+}
+
+.navbar-brand img {
+    max-width: 200px;
+}
+
+.navbar-nav li a {
+    letter-spacing: 0.5px;
+    position: relative;
+
+}
+
+.navbar-nav li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    /* transition: .2s; */
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.navbar-nav li a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    right: 0;
+    bottom: 8px;
+    position: absolute;
+    transition: .5s;
+}
+
+.navbar-nav li a:hover::after,
+.navbar-nav li a:hover::before {
+    width: 50%;
+}
+
+/* header-end */
+
+
+
+.calculator {
+    max-width: 280px;
+    height: 400px;
+    margin: 100px auto;
+    background: #DCDEE2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calculator input[type=text] {
+    outline: none;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-size: 23px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+.calculator input[type=button] {
+    width: 61px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.button-line {
+    margin-bottom: 20px;
+}
+
+.button-inner input[type=button] {
+    width: 128px;
+}
+
